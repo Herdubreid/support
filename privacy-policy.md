@@ -1,18 +1,18 @@
 # Privacy Policy of Bragason And Associates Pty Ltd
 
-Bragason And Associates Pty Ltd manages the xl.celin.io Add-ins, which provides the SERVICE.
+Bragason And Associates Pty Ltd manages the xl.celin.io website, which services the Celin.XL Add-ins.
 
 ## Information Collection and Use
 
-We don't collect any information from usage of the Service.
+Celin.XL Add-ins does not collect any information from usage.
 
 ## Cookies
 
-Our Service does not use Cookies.
+Celin.XL does not use Cookies.
 
 ## Links to Other Sites
 
-Our Service does not contain links to other sites.
+Celin.XL does not contain links to other sites.
 
 ## Changes to This Privacy Policy
 
