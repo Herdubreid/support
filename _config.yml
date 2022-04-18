@@ -1,0 +1,6 @@
+remote_theme: just-the-docs/just-the-docs
+
+baseurl: "/Celin.Query" 
+url: "https://celin.io"
+
+search_enabled: true

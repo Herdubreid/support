@@ -1,0 +1,13 @@
+pre {
+  padding: 15px;
+}
+pre,
+code.language-cql {
+  color: rgb(74, 222, 128) !important;
+  background: #1e293b !important;
+  border: none !important;
+  border-radius: unset !important;
+}
+.codeblock {
+  position: relative;
+}
