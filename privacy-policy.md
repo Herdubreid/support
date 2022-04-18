@@ -1,3 +1,9 @@
+---
+layout: default
+title: Privacy Policy
+nav_exclude: true
+---
+
 # Privacy Policy of Bragason And Associates Pty Ltd
 
 Bragason And Associates Pty Ltd manages the xl.celin.io website, which services the Celin.XL Add-ins.
