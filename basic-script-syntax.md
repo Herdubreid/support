@@ -31,10 +31,10 @@ Where:
 
 The following `form` actions are available:
 
-- `do(` _id*_ `)`: click a button/row/form exit.  Example `do(4)`.
-- `set(` _id*_ `,` _value*_`)`: set control's value.  Example `set(14, "Some name")`.
-- `qbe(` _QBE_ `,` _value*_`)`: set value of QBE column.  Example `qbe(1[19], 4001)`.
-- `select(` _Row_ `)`: select grid row.  Example `select(1.10)`.
+- `do(` _id*_ `)` : click a button/row/form exit.  Example `do(4)`.
+- `set(` _id*_ `,` _value*_`)` : set control's value.  Example `set(14, "Some name")`.
+- `qbe(` _QBE_ `,` _value*_`)` : set value of QBE column.  Example `qbe(1[19], 4001)`.
+- `select(` _Row_ `)` : select grid row.  Example `select(1.10)`.
 
 The following `grid` actions are available:
 
@@ -49,11 +49,11 @@ Where _Column Action_ has the format:
 
 _column*_ `:` _value_
 
-_id*_: Control's AIS id.  
-_value*_: Literal in optional double quotes.  
-_grid*_: Grid's AIS id (normally `1`).  
-_row*_: Zero index row number.  
-_column*_: Grid's Column AIS id.
+_id*_ : Control's AIS id.  
+_value*_ : Literal in optional double quotes.  
+_grid*_ : Grid's AIS id (normally `1`).  
+_row*_ : Zero index row number.  
+_column*_ : Grid's Column AIS id.
 
 ## Outputs
 
@@ -64,12 +64,12 @@ Output statement can be one of:
 
 Where:
 
-- _Format_ is a double quoted string with optional `{n}` placeholders.
+- _Format_ is a double quoted string with optional `{i}` placeholders.
 - _Parameter_ can be one of:
-  - `$form`: returned form name.
-  - `$title`: return form title.
-  - `$row`: input row number.
-  - `$col[n]`: input column number `n`.
+  - `$form` : returned form name.
+  - `$title` : return form title.
+  - `$row` : input row number.
+  - `$col[i]` : input column with zero index `i`.  Example `$col[0]` is the first column.
 
 ## Actions
 
