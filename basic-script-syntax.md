@@ -31,23 +31,23 @@ Where:
 
 The following `form` actions are available:
 
-- `do`(_id*_): click a button/row/form exit.  Example `do(4)`.
-- `set`(_id*_, _value*_): set control's value.  Example `set(14, "Some name")`.
-- `qbe`(_QBE_, _value*_): set value of QBE column.  Example `qbe(1[19], 4001)`.
-- `select`(_Row_): select grid row.  Example `select(1.10)`.
+- `do(` _id*_ `)`: click a button/row/form exit.  Example `do(4)`.
+- `set(` _id*_ `,` _value*_`)`: set control's value.  Example `set(14, "Some name")`.
+- `qbe(` _QBE_ `,` _value*_`)`: set value of QBE column.  Example `qbe(1[19], 4001)`.
+- `select(` _Row_ `)`: select grid row.  Example `select(1.10)`.
 
 The following `grid` actions are available:
 
-- `insert[`_grid*_`,`_one or more Row Actions_`]`
-- `update[`_grid*_`,`_one or more Row Actions_`]`
+- `insert[` _grid*_ `,` _one or more Row Actions_ `]`
+- `update[` _grid*_ `,` _one or more Row Actions_ `]`
 
 Where _Row Action_ has the format:
 
-_row*_`:(`_one or more Column Actions_`)`_followed by optional Each_
+_row*_ `:(` _one or more Column Actions_ `)` _followed by optional Each_
 
 Where _Column Action_ has the format:
 
-_column*_`:`_value_
+_column*_ `:` _value_
 
 _id*_: Control's AIS id.  
 _value*_: Literal in optional double quotes.  
@@ -59,7 +59,7 @@ _column*_: Grid's Column AIS id.
 
 Output statement can be one of:
 
-- `.output(`_Format_`,`_zero or more Parameter_`)`
+- `.output(` _Format_ `,` _zero or more Parameter_ `)`
 - `.output.dump`. The AIS full return (useful for debugging).
 
 Where:
@@ -75,14 +75,13 @@ Where:
 
 Action has the format:
 
-`.action[`_Form\Grid Actions as above_`]`
+`.action[` _Form\Grid Actions as above_ `]`
 
 ## Each
 
 Each is a two dimensional array and can either be:
 
-- `.each[`_elements_`]`: where _elements_ is one or more array `[`_string*_|_number_`,...]`
-- `.each@`_variable_: where _variable is `Excel` table name.
+- `.each[` _elements_ `]` : where _elements_ is one or more array `[` _string*_|_number_ `,...]`
+- `.each@` _variable_: where _variable is `Excel` table name.
 
 _string*_: must be in double quotes.
-
