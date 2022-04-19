@@ -11,7 +11,6 @@ nav_order: 4
 
 # Basic Query Syntax
 
-Following is the basic syntax format:
 <pre>
 <i>Subject</i> [-max <i>(rows|no)|-demo</i>]
 [<i>Alias-List</i>|<i>Aggregation</i>]
