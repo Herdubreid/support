@@ -1,2 +1,2 @@
-# support
-Support for Celin Excel-Addins
+# docs
+Documentation for Celin Excel-Addins
