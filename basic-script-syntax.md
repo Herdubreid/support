@@ -85,3 +85,4 @@ Each is a two dimensional array and can either be:
 - `.each@` _variable_: where _variable is `Excel` table name.
 
 _string*_: must be in double quotes.
+
