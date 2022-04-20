@@ -5,7 +5,7 @@ nav_order: 1
 ---
 # Overview
 
-CelinQL is an Excel add-ins for extracting data and submitting form request to Oracle E1 using AIS.
+CelinXL is an Excel add-ins for extracting data and submitting form request to Oracle E1 using AIS.
 
 The data extraction tool has SQL-like syntax (referred to as `cql`) for querying E1/JDE tables, business views and forms.
 
