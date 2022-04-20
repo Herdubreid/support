@@ -1,11 +1,6 @@
-# Use just-the-docs theme
 remote_theme: just-the-docs/just-the-docs
 
 baseurl: "/xl-docs"
 url: "https://celin.io"
 
 search_enabled: true
-
-future: true
-
-theme: jekyll-theme-cayman
