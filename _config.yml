@@ -7,3 +7,5 @@ url: "https://celin.io"
 search_enabled: true
 
 future: true
+
+theme: jekyll-theme-cayman
