@@ -3,7 +3,7 @@ remote_theme: just-the-docs/just-the-docs
 
 baseurl: "/xl-docs"
 url: "https://celin.io"
-exclude: ["/assets", "/img"]
+exclude: ["/assets"]
 
 search_enabled: true
 
