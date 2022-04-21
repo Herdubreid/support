@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Address Book Cat Code Update
+title: Address Book
 parent: Script
 nav_order: 1
 ---
@@ -10,7 +10,9 @@ nav_order: 1
 <script src="../assets/prism-core.min.js"></script>
 <script src="../assets/prism-csl.js"></script>
 
-Script Example
+### Update Address Book Cat Code
+
+A a simple two action script that uses Address Book Revision (P01012) to update Cat Code 21.
 
 <div class="codeblock">
 <pre><code class="language-csl">/*
@@ -34,7 +36,7 @@ Log activity
 */
 .output("Updated {0}", $col[0])
 /*
-Repeat for rows in table ab
+Repeat for array
 */
 .each[[4001,"N"],[4002,"Y"],[4050,"N"]]
 </code></pre>
