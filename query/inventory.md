@@ -5,10 +5,10 @@ nav_order: 3
 parent: Query
 ---
 
-<link href="assets/prism-dark.min.css" rel="stylesheet" />
-<link href="assets/style.css" rel="stylesheet">
-<script src="assets/prism-core.min.js"></script>
-<script src="assets/prism-cql.js"></script>
+<link href="../assets/prism-dark.min.css" rel="stylesheet" />
+<link href="../assets/style.css" rel="stylesheet">
+<script src="../assets/prism-core.min.js"></script>
+<script src="../assets/prism-cql.js"></script>
 
 ### Items with non-blank cat code 2 and contains "Bike" in the description:
 

@@ -5,10 +5,10 @@ nav_order: 4
 parent: Query
 ---
 
-<link href="assets/prism-dark.min.css" rel="stylesheet" />
-<link href="assets/style.css" rel="stylesheet">
-<script src="assets/prism-core.min.js"></script>
-<script src="assets/prism-cql.js"></script>
+<link href="../assets/prism-dark.min.css" rel="stylesheet" />
+<link href="../assets/style.css" rel="stylesheet">
+<script src="../assets/prism-core.min.js"></script>
+<script src="../assets/prism-cql.js"></script>
 
 ### Work Orders with Status between 10 and 40:
 
