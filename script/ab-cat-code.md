@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Address Book Cat Code Update
-parent: Script Examples
+parent: Script
 nav_order: 1
 ---
 
