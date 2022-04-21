@@ -27,6 +27,8 @@ Where:
 - _Actions_: zero or more execute actions.
 - _Each_: optional each statement.
 
+_Note_: The stripped `open(` _Form_ `)` statement submits the form with the `demo` flag to fetch the spes.
+
 ## Form/Grid Actions
 
 The following `form` actions are available:
@@ -81,8 +83,10 @@ Action has the format:
 
 Each is a two dimensional array and can either be:
 
-- `.each[` _elements_ `]` : where _elements_ is one or more array `[` _string*_|_number_ `,...]`
+- `.each[` _elements_ `]` : where _elements_ is one or more array `[` (_string*_|_number_) `,...]`
 - `.each@` _variable_: where _variable is `Excel` table name.
 
 _string*_: must be in double quotes.
+
+## Basic Samples
 
