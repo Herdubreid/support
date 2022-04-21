@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Basic Script Syntax
+title: Script
 nav_order: 4
+has_children: true
 ---
 
 <link href="assets/prism-dark.min.css" rel="stylesheet" />
