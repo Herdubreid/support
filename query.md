@@ -2,7 +2,7 @@
 layout: default
 title: Query
 nav_order: 4
-parent: true
+has_children: true
 ---
 
 <link href="assets/prism-dark.min.css" rel="stylesheet" />
