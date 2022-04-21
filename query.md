@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Basic Query Syntax
+title: Query
 nav_order: 4
+parent: true
 ---
 
 <link href="assets/prism-dark.min.css" rel="stylesheet" />
@@ -96,39 +97,3 @@ Two or more conditions can be chained with `and` or `or` operator.
 </pre>
 
 ### Examples
-
-List Address Book's name and number:
-
-<div class="codeblock">
-<pre><code class="language-cql">f0101 (an8,alph)</code></pre>
-</div>
-
-Show highest, lowest, average and total order line amounts.
-
-<div class="codeblock">
-<pre><code class="language-cql">f4311 [max(aexp) min(aexp) avg(aexp) sum(aexp)]</code></pre>
-</div>
-
-List Sum of Open OP Orders.
-
-<div class="codeblock">
-<pre><code class="language-cql">f4311 [
-  group(doco,dcto) sum(aopn)]
-  all(nxtr = 400 dcto = OP uopn <> 0)</code></pre>
-</div>
-
-List items with non-blank cat code 2 and contains "Bike" in the description:
-
-<div class="codeblock">
-<pre><code class="language-cql">f4101 (itm,litm,dsc1) all(srp2 ! blank srtx ? Bike)</code></pre>
-</div>
-
-**Note:** The `!` operator only require a literal to keep up with the syntax.
-
-List Work Orders with Status between 10 and 40:
-
-<div class="codeblock">
-<pre><code class="language-cql">f4801 (doco,dl01,srst) all(srst bw "10","45")</code></pre>
-</div>
-
-**Note:** Literals can optionally be enclosed in quotation marks which is useful when it contains special characters.
