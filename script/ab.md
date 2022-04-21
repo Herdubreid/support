@@ -16,28 +16,19 @@ A a simple two action script that uses Address Book Revision (P01012) to update 
 
 <div class="codeblock">
 <pre><code class="language-csl">/*
-Open Work With Addresses
-Set AB# QBE to intput column 0 
-Press Find
-*/
+/* Open Work With Addresses
+   Set AB# QBE to intput column 0 
+   Press Find */
 open(w01012b)[qbe(1[19],$col[0]) do(15)]
-/*
-Select the first row
-Press OK
-*/
+/* Select the first row 
+   Press OK */
 .action[select(1.0) do(14)]
-/*
-Set control 463 (CC 21) to column 1
-Press Save
-*/
+/* Set control 463 (CC 21) to column 1
+   Press Save */
 .action[set(463, $col[1]) do(11)]
-/*
-Log activity
-*/
+/* Log activity */
 .output("Updated {0}", $col[0])
-/*
-Repeat for array
-*/
+/* Repeat for array */
 .each[[4001,"N"],[4002,"Y"],[4050,"N"]]
 </code></pre>
 </div>
