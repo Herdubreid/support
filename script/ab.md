@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Address Book
-parent: Script
 nav_order: 1
+parent: Script
 ---
 
 <link href="../assets/prism-dark.min.css" rel="stylesheet" />

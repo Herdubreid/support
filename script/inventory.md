@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Inventory
-parent: Script
 nav_order: 2
+parent: Script
 ---
 
 <link href="../assets/prism-dark.min.css" rel="stylesheet" />
