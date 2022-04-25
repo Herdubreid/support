@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Address Book
+title: Inventory
 parent: Script
 nav_order: 2
 ---
