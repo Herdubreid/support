@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Purchase Order Lines
+title: Purchase Order
 nav_order: 2
 parent: Query
 ---
