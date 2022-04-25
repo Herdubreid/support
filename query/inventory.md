@@ -13,7 +13,20 @@ parent: Query
 ### Items with non-blank cat code 2 and contains "Bike" in the description:
 
 <div class="codeblock">
-<pre><code class="language-cql">f4101 (itm,litm,dsc1) all(srp2 ! blank srtx ? Bike)</code></pre>
+<pre><code class="language-cql">f4101 (itm,litm,dsc1) all(srp2 ! blank srtx ? Bike)
+</code></pre>
 </div>
 
 **Note:** The `!` operator only require a literal to keep up with the syntax.
+
+### An Item Master table with minimum required fields
+
+<div class="codeblock">
+<pre><code class="language-cql">/* Item Master */
+@im =
+/* Open Table F4101 */
+f4101
+/* Read the required Item Master Fields */
+(litm,aitm,dsc1,srtx,uom1,glpt,stkt,lnty);
+</code></pre>
+</div>

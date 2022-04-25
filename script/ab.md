@@ -15,8 +15,7 @@ nav_order: 1
 A a simple two action script that uses Address Book Revision (P01012) to update Cat Code 21.
 
 <div class="codeblock">
-<pre><code class="language-csl">
-/* Open Work With Addresses
+<pre><code class="language-csl">/* Open Work With Addresses
    Set AB# QBE to intput column 0 
    Press Find */
 open(w01012b)[qbe(1[19],$col[0]) do(15)]
