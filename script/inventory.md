@@ -15,8 +15,9 @@ parent: Script
 Create Inventory Master records from an Excel table named `im`.
 
 <div class="codeblock">
-<pre><code class="language-csl">open(w4101e)
-  /* Press Add */
+<pre><code class="language-csl">/* Open Work With Item Master Browse */
+open(w4101e)
+  /* Press Add  (opens Item Master Revision) */
   [do(17)]
 /* Populate Form */
 .action[
@@ -36,9 +37,11 @@ Create Inventory Master records from an Excel table named `im`.
   set(26,$col[6])
   /* Line Type */
   set(29,$col[7])
-  /* Press OK */
+  /* Press OK (opens Storage/Shipping ) */
   do(11)]
+/* Log the ITM Number */
 .output("Item {0}",$data[16])
+/* Press OK */
 .action[do(11)]
 .each@im
 </code></pre>
