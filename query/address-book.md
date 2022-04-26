@@ -34,7 +34,7 @@ Example of checking category code 21 for selected numbers.
 <div class="codeblock">
 <pre><code class="language-cql">
 /* Address Book */
-@ab =
+#ab =
 /* AB# and Name from Master */
 f0101 (an8,ac21)
 /* Between AB# 4000 and 4100 */

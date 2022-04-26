@@ -1,6 +1,6 @@
 Prism.languages.csl = {
     string: /"[^"]*"/,
-    comment: /\/\*.*(?!\*\/)/,
+    comment: /\/\*[^*]*\*\//,
     variable: /\$(?:row|col\[\d+\])/,
     function: /\b(?:do|set|select|qbe)\b/,
     keyword: /\b(?:open|action|output|each|close|demo|dump)\b/,

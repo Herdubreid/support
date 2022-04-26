@@ -1,6 +1,6 @@
 Prism.languages.cql = {
     string: /"[^"]*"/,
-    comment: /\/\*.*(?!\*\/)/,
+    comment: /\/\*[^*]*\*\//,
     bold: /[fFvVwW]\w{4,7} |@\w+|\$.+\"/,
     italic: /(?:-demo|-v2|-max)/,
     function: /\b(?:sum|min|max|avg|count|count_distinct|avg_distinct|group|desc|asc)\b/,
