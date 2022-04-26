@@ -10,9 +10,9 @@ parent: Script
 <script src="../assets/prism-core.min.js"></script>
 <script src="../assets/prism-csl.js"></script>
 
-### Create Inventory Master
+### Create Item Master
 
-Create Inventory Master records from an Excel table named `im`.
+Create Item Master records from an Excel table named `im`.
 
 <div class="codeblock">
 <pre><code class="language-csl">/* Open Work With Item Master Browse */
