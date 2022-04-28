@@ -37,3 +37,26 @@ open(w43101b,zjde0001)[
 .output.grid
 </code></pre>
 </div>
+
+### Speed Status Update
+
+<div class="codeblock">
+<pre><code class="language-csl">/* Open Speed Status Update */
+open(w43025a,zjde0001)[
+  /* Set the Order Number */
+  set(10,$col[0])
+  /* Set BU M30 */
+  set(18,M30)
+  /* Selec QBE for the line */
+  qbe(1[22],$col[1])
+  /* Press Find */
+  do(6)]
+.output("Update Order {0}, Line {1}",$col[0],$col[1])
+.action[
+  /* Select the first Grid Row */
+  select(1.0)
+  /* Press Select              */
+  do(4)]
+.each@po
+</code></pre>
+</div>

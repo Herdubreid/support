@@ -21,5 +21,18 @@ parent: Query
 <div class="codeblock">
 <pre><code class="language-cql">f4311 [
   group(doco,dcto) sum(aopn)]
-  all(nxtr = 400 dcto = OP uopn <> 0)</code></pre>
+  all(nxtr = 400 dcto = OP uopn <> 0)
+  </code></pre>
 </div>
+
+### List of Open Purchase Orders
+
+<div class="codeblock">
+<pre><code class="language-cql">/* Open PO's */
+#open =
+/* Open table F4311  */
+f4311
+/* Select fields */
+(doco,dcto,lnid,litm,dsc1,uopn,prrc,aopn)
+/* Items to display */
+all(litm in @items);
