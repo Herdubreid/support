@@ -22,10 +22,25 @@ parent: Query
 <pre><code class="language-cql">f4311 [
   group(doco,dcto) sum(aopn)]
   all(nxtr = 400 dcto = OP uopn <> 0)
-  </code></pre>
+</code></pre>
 </div>
 
-### List of Open Purchase Orders
+### List Pending Purchase Orders
+
+<div class="codeblock">
+<pre><code class="language-cql">/* Pending PO's */
+#pending =
+/* Open table F4311 */
+f4311
+/* Select fields */
+(doco,lnid,nxtr)
+/* Next Status less than 280
+   and item in list */
+all(nxtr < 280 litm in @items);
+</code></pre>
+</div>
+
+### List Open Purchase Orders
 
 <div class="codeblock">
 <pre><code class="language-cql">/* Open PO's */
@@ -35,4 +50,4 @@ f4311
 /* Select fields */
 (doco,dcto,lnid,litm,dsc1,uopn,prrc,aopn)
 /* Items to display */
-all(litm in @items);
+all(nxtr bw 280,400 litm in @items);
