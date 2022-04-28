@@ -3,7 +3,7 @@ Prism.languages.csl = {
     comment: /\/\*[^*]*\*\//,
     variable: /\$(?:row|col\[\d+\])/,
     function: /\b(?:do|set|select|qbe)\b/,
-    keyword: /\b(?:open|action|output|each|close|demo|dump)\b/,
+    keyword: /\b(?:open|action|output|each|close|demo|dump|grid)\b/,
     punctuation: /[{}[\];(),\.]/,
     number: /\b\d+\b/,
 };

@@ -48,3 +48,20 @@ f4102
 all(litm in @items);
 </code></pre>
 </div>
+
+### Item Location
+
+Item balance quantities for items in excel list `items`.
+
+<div class="codeblock">
+<pre><code class="language-cql">/* Item Location */
+#il =
+/* Open table F41021 */
+f41021
+/* Sum the Qty fields */
+[sum(pqoh,pbck,preq,qwbo,hcom,pcom)
+ group(itm,mcu)]
+/* Where ITM is in list items */
+all(mcu=M30 itm in @items);
+</code></pre>
+</div>
