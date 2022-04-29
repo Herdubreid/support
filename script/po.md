@@ -60,3 +60,35 @@ open(w43025a,zjde0001)[
 .each@po
 </code></pre>
 </div>
+
+### Receipt Order
+
+<div class="codeblock">
+<pre><code class="language-csl">/* Open WW Orders to Receive */
+open(w4312f,zjde0001)
+/* Set the DOCO to excel name order
+   Press Find */
+[set(7,@order) do(21)]
+/* Select the 1st Grid Row
+   Press OK */
+.action[select(1.0) do(4)]
+/* In Purchase Order Receipts */
+.action[
+  update[1
+    /* Receipt Line */
+    $row:(
+      /* Rec Opt 1 */
+      382:1,
+      /* Blank Extended Price */
+      117:"")
+  /* For Every Line */
+  .each@lines]
+  /* Press OK */
+  do(4)]
+/* Landed Cost Selection */
+.action[
+  /* Press OK */
+  do(4)]
+.output("Voucher {0}",$data[85])
+</code></pre>
+</div>
