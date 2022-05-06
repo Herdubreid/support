@@ -52,7 +52,7 @@ open(w4101e)
 
 Create Item/Branch records from Excel table `im`.
 
-_Note_: Missing a step for adding Item Cost (Row Exit `Cost Revision` to `W4105B`).
+_Note_: Missing a step for adding Item Cost (Row Exit `Cost Revision` to `W4105B`) and Item Price (Row Exit `Price Revision` to `W4106J`).
 
 <div class="codeblock">
 <pre><code class="language-csl">/* Open Work With Item Branch */
