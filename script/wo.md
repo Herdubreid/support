@@ -77,14 +77,16 @@ open(w31225d,zjde0001)[
 /* Complete */
 .action[
   /* Row Exit WO Completion */
-  do(89)
+  do(89)]
+/* WO Completion (W431114B) */
+.action[
   /* Qty Comleted */
   set(46,$col[4])
   /* Qty Scrapped */
   set(48,$col[5])
   /* Press OK */
   do(561)]
-/* Log the Work Order Number */
+/* Dump the output */
 .output.dump
 /* Repeate for Orders */
 .each@wos
