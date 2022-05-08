@@ -40,7 +40,7 @@ open(w4210e,zjde0001)[
   /* Press OK */
   do(4)]
 /* Log Order Number */
-.output("Order {0}", $data[102];
+.output("Order {0}", $data[102]);
 </code></pre>
 </div>
 
