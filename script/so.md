@@ -2,7 +2,7 @@
 layout: default
 title: Sales Orders
 nav_order: 5
-parent: Query
+parent: Script
 ---
 
 <link href="../assets/prism-dark.min.css" rel="stylesheet" />
