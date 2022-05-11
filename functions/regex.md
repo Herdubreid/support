@@ -7,7 +7,7 @@ parent: Functions
 
 ### Celin.REGEX
 
-A regular express function.
+A regular expression function.
 
 
 #### Example
