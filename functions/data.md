@@ -7,11 +7,11 @@ parent: Functions
 
 ### Celin.DATA
 
-Display named the data on a sheet.
+Display named data on a sheet using the Spill functionality (see below).
 
 #### Example
 
-Display of full results of `ab`.
+Display full results of `ab` data.
 
 ```
 =Celin.DATA("ab",-1,-1)
