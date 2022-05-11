@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Select a table row
-nav_order: 1
+title: Run a query
+nav_order: 3
 parent: Functions
 ---
 
@@ -10,13 +10,14 @@ parent: Functions
 <script src="../assets/prism-core.min.js"></script>
 <script src="../assets/prism-cql.js"></script>
 
-### Celin.SELECT
+### Celin.RUN
 
-Selects a row from a table or a cell range.
+Runs a query when a trigger cell range changes.
 
 #### Example
 
 Create an address book table, named `ab` with address book number and name.
+Select the address number from a cell named `Customer`.
 
 <div class="codeblock">
 <pre><code class="language-cql">/* Address Book Table */
@@ -24,15 +25,21 @@ Create an address book table, named `ab` with address book number and name.
 /* Table */
 f0101
 /* Fields (Alias) */
-(an8,alph)</code></pre>
+(an8,alph)
+/* Where ab number equals cell name Customer */
+all(an8=@Customer)</code></pre>
 </div>
 
-Insert a `Select` column on the table's left and enter the select formula (must have at least two empty columns on its right).
+Trigger a re-run of the query whenever the `Customer` cell value changes.
 
 ```
-=Celin.SELECT(ab,"*")
+=Celin.RUN("ab",Customer)
 ```
 
-Enter the marker ("*") in the `select` column.
+Display the results with the `DATA` function.
 
-![Select Formula](../img/select-formula.png)
+```
+=Celin.DATA("ab",-1,-1)
+```
+
+![RUN](../img/run-function.png)
