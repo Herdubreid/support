@@ -15,6 +15,6 @@ The form request tool (referred to as `csl`) uses a chained list of commands for
 
 # Support
 
-[Contact Email](fbragason@outlook.com) for support and general queries.
+[Contact Email](mailto:fbragason@outlook.com) for support and general queries.
 
 GitHub [issue log](https://github.com/Herdubreid/xl-docs/issues) for bugs and feature requests.
