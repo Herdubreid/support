@@ -15,7 +15,7 @@ parent: Command
 A function to write number as words.  Accepts a single parameter, the number to convert and returns a string with the number in words.
 
 <div class="codeblock">
-<pre><code class="language-celincm"
+<pre><code class="language-javascript"
 >func numToWords
 const arr = x => Array.from(x);
 const num = x => Number(x) || 0;
