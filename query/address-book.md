@@ -32,8 +32,8 @@ The size of the list depends on the setting in AIS (default is 100).
 Example of checking category code 21 for selected numbers.
 
 <div class="codeblock">
-<pre><code class="language-cql">
-/* Address Book */
+<pre><code class="language-cql"
+>/* Address Book */
 #ab =
 /* AB# and Name from Master */
 f0101 (an8,ac21)
