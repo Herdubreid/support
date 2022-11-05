@@ -5,9 +5,6 @@ nav_order: 1
 parent: Command
 ---
 
-<link href="../assets/prism-dark.min.css" rel="stylesheet" />
-<link href="../assets/style.css" rel="stylesheet">
-
 ### Convert Number to Words
 
 A function to write number as words.  Accepts a single parameter, the number to convert and returns a string with the number in words.
