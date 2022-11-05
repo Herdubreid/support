@@ -2,7 +2,7 @@
 layout: default
 title: Number To Words
 nav_order: 1
-parent: Commands
+parent: Command
 ---
 
 <link href="../assets/prism-dark.min.css" rel="stylesheet" />

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Script
+title: Command
 nav_order: 6
 has_children: true
 ---
