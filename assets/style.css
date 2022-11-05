@@ -3,7 +3,8 @@ pre {
 }
 pre,
 code.language-cql,
-code.language-csl {
+code.language-csl,
+code.language-celincm {
   color: rgb(74, 222, 128) !important;
   background: #1e293b !important;
   border: none !important;
