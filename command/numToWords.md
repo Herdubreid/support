@@ -7,16 +7,13 @@ parent: Command
 
 <link href="../assets/prism-dark.min.css" rel="stylesheet" />
 <link href="../assets/style.css" rel="stylesheet">
-<script src="../assets/prism-core.min.js"></script>
-<script src="../assets/prism-celincm.js"></script>
 
 ### Convert Number to Words
 
 A function to write number as words.  Accepts a single parameter, the number to convert and returns a string with the number in words.
 
-<div class="codeblock">
-<pre><code class="language-javascript"
->func numToWords
+``` js
+func numToWords
 const arr = x => Array.from(x);
 const num = x => Number(x) || 0;
 const str = x => String(x);
@@ -63,6 +60,5 @@ let numToWords = n => {
    .reverse()
    .join(' ');
  };
-return numToWords(params[0][0][0]);
-</code></pre>
-</div>
+return numToWords(params[0][0][0]);</code></pre>
+```
