@@ -9,7 +9,7 @@ parent: Command
 
 Demonstrates Excel's streaming and spill functionality (run with `CALLSTREAM`).
 
-```` js
+``` js
 func clock
 const col = [['','',''],['','*',''],['','',''],['','',''],['','*',''],['','','']];
 const n = [
