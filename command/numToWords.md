@@ -9,6 +9,8 @@ parent: Command
 
 A function to write number as words.  Accepts a single parameter, the number to convert and returns a string with the number in words.
 
+[From Stackoverflow](https://stackoverflow.com/questions/14766951/transform-numbers-to-words-in-lakh-crore-system)
+
 ``` js
 func numToWords
 const arr = x => Array.from(x);
@@ -57,5 +59,5 @@ let numToWords = n => {
    .reverse()
    .join(' ');
  };
-return numToWords(params[0][0][0]);</code></pre>
+return [[numToWords(params[0][0][0])]];
 ```
