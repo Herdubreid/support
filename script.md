@@ -41,12 +41,12 @@ The following `form` actions are available:
 
 The following `grid` actions are available:
 
-- `insert[` _grid*_ `,` _one or more Row Actions_ `]`
-- `update[` _grid*_ `,` _one or more Row Actions_ `]`
+- `insert[` _grid*_ _one or more Row Actions_ `]`
+- `update[` _grid*_ _one or more Row Actions_ `]`
 
 Where _Row Action_ has the format:
 
-_row*_ `:(` _one or more Column Actions_ `)` _followed by optional Each_
+_row*_ `:(` _one or more comma separated Column Actions_ `)` _followed by optional Each_
 
 Where _Column Action_ has the format:
 
