@@ -5,6 +5,8 @@ nav_order: 2
 ---
 # Installation
 
+This section describes local installation.
+
 There are three options for installing the Add-Ins using a manifest file.
 
 1. Use Excel on-line side-loading.
