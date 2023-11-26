@@ -17,13 +17,13 @@ This exercise steps through the basic *cql* functions of **Celin.XL**.
 4. Press the **Add** button on for the **Celin.XL** row.
 5. Agree to the *License Terms and Privacy Policy* by pressing the **Continue** button.
 
-Once the **Add-ins** has loaded it will open the in the right-hand pane.  Enter the *AIS Server* URL and press **Enter** or click the **Ok** button below it (use *demo.steltix.com* for [Steltix Demo](https::/demo.steltix.com)i.  
+Once the **Add-ins** has loaded it will open the in the right-hand pane.  Enter the *AIS Server* URL and press **Enter** or click the **Ok** button below it (use *demo.steltix.com* for [Steltix Demo](https::/demo.steltix.com).  
 Once th URL has been validated, the connection box closes and **Celin.XL** is ready for use.
 
 ### Execute a simple Query
 
 1. With the **CQL** tab selected, enter the following *cql* statement:
-```js
+```
 f0101 (an8,alph,at1)
 ```
 2. Select **Run Query** from the top left drop-down menu (three vertical dots).
@@ -35,11 +35,11 @@ The result of the *cql* statement are pasted into the worksheet, starting from t
 ### Paste Results in a Table
 
 1. Change the *cql* statement to the following:
-```js
+```
 #ab = f0101 (an8,alph,at1)
 ```
 2. Select **Run Query** or press *Alt-R*.
-> The statement to run is anything from the previous empty line to the cursor.  To run a statement, place the cursor in an empty line below it.
+> The statement to run is anything from the previous empty line to the cursor.  To run a statement, place the cursor on an empty line below the statement.
 2. Expand the **ab** box in the result section by pressing the blue button on the left side.
 3. Expand **Table Options** section by pressing the caption and tick the **Auto** box and **Replace** option.
 4. Add a new worksheet and set *B4* as the active cell.
@@ -53,12 +53,12 @@ The *cql* results are now displayed in table *ab*.
 
 Update the *cql* statement to the following, and press **Run Query** or *Alt-R*.
 
-```js
+```
 #ab = f0101 (an8,alph,at1)
 all(at1=E alph?John)
 ```
 
-This will fill filter rows with *Search Type* 'E' and *Alpha Name* 'John'.
+This will filter rows with *Search Type* 'E' and *Alpha Name* 'John'.
 
 ### Use Worksheet Variable
 
@@ -66,7 +66,7 @@ Named ranges can be used as variables in *cql*.  This example steps through how 
 
 1. Name cell *C2* as **Search** using the **Define Name** from the **Formulas** ribbon.
 2. Update the *cql* statement to the following:
-```js
+```
 #ab = f0101 (an8,alph,at1)
 all(at1=E alph?@search)
 ```
