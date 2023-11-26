@@ -15,8 +15,8 @@ has_children: true
 <pre>
 <i>Subject</i> [-max <i>(rows|no)|-demo</i>]
 [<i>Alias-List</i>|<i>Aggregation</i>]
-(<i>Condition</i>)
 <i>by[asc(Alias-List) desc(Alias-List)]</i>
+(<i>Condition</i>)
 </pre>
 
 Where:
@@ -26,8 +26,8 @@ Where:
 - `-demo`: returns table layout.
 - _Alias-List_: a comma separated list of table's or view's aliases, or Form's control id's to list. The table prefix can be ignored if the alias is unique, like in tables for example. Example `(an8, alph)`.
 - _Aggregation*_: a list of aggregate functions. A query can either be a list of aliases or group of aggregate functions. Example `[max(an8) min(an8)]` (see Aggregate functions below).
-- _Condition_: optional filter conditions. Example `all(an8>4000)` (see Conditions below).
 - `by`: sort orders for _Alias-List_ (see Aggregate for details). Example `by[asc(alph)]` sequence by alph in ascending orders.
+- _Condition_: optional filter conditions. Example `all(an8>4000)` (see Conditions below).
 
 _* Note_: Aggregate is not available for Forms.
 
